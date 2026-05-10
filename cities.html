@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    /* background-image: url(img/cities.jpeg); */
+    background-image: linear-gradient(rgb(111, 89, 59) 60% ,transparent);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 300vh; */
+    background-attachment: fixed;
+}
+
+h2{
+    font-size: 33px;
+    margin-top: 3px;
+}
+div{
+background: rgba(255,255,255,0.2);
+/* backdrop-filter: blur(50px); */
+    width: fit-content;
+    border: 2px dotted white;
+    border-radius: 30px;
+    padding: 70px;
+    /* height:5%; */
+/* box-shadow: 2px 2px 5px 4px white;     */
+position: absolute;
+bottom: 47%;
+left: 35%;
+
+
+box-shadow: 2px 2px 5px 4px black;
+}
+
+input{
+  font-size: 20px;
+  position: relative;
+  left: 30px;
+  border-radius: 30px;
+  padding: 15px;
+  background-color: beige;
+
+}
+div button{
+    position: relative;
+    top: 70px;
+    right: 130px;
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+}
+
+iframe{
+    display: block;
+    height: 150vh;
+    width: 100%;
+}
+form{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+h1{
+    margin-left: 20px;
+}
+
+select{
+    /* appearance: none; */
+    text-align: center;
+   background-color: rgb(70, 56, 7);
+   border-radius:30px ;
+   font-size: 18px;
+   color: white;
+   animation-name: l;
+   animation-duration:2s ;
+   animation-timing-function: linear;
+}
+
+
+
+@keyframes l{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+label{
+    color:white;
+    font-size: 20px;
+    }
+
+    @media (max-width:720px){
+  div{
+  margin: auto;
+   display: block;
+  position: relative;
+  top: 50px;
+  left:0px;
+
+
+  }
+
+  div h1{
+    width: 90%;
+    text-align: center;
+    translate: 0 -20px;
+  
+  }
+
+ div button{
+
+    position: absolute;
+top: 250px;
+  
+    right: 190px;
+    
+
+
+   
+   
+  
+ }
+
+  input{
+    position: relative;
+  left: 17px;
+
+  }
+ iframe{
+    width: 100%;
+    height: 150vh;
+ }
+
+ select{
+    display: block;
+
+ }
+
+    } 
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+  <h2><span style="color: black;text-shadow: 2px 2px 5px white;">Explore</span>
+         <span style="color: red;">E</span ><span style="color: white;">gyp</span><span style="color: black;">t</span> </h2>
+ 
+<form >
+   <label for="z">المحافظات المتاحة</label>
+   <select name="" id="">
+
+<option onclick="press('القاهرة');" value="">القاهرة</option>
+<option onclick="press('الجيزة');" value="">الجيزة</option>
+<option onclick="press('الإسكندرية');" value="">الإسكندرية</option>
+<option onclick="press('الفيوم');" value="">الفيوم</option>
+<option onclick="press('البحر الأحمر');" value="">البحر الأحمر</option>
+<option onclick="press('الأقصر');" value="">الأقصر</option>
+<option onclick="press('أسوان');" value="">أسوان</option>
+
+
+</select>
+
+</form>
+
+
+ 
+         <div>
+    <h1>اكتشف  محافظات مصر الأن</h1> 
+
+    <input type="text" id="x" placeholder="🔍أبحث علي ما تريد">
+
+<button  onclick="openpage()">بحث</button>
+   </div>
+
+
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <iframe  id="fram" frameborder="0"></iframe>
+<script src="citiesjs.js">
+ 
+
+</script>    
+</body>
+</html>
