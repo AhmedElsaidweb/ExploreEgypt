@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Explore Egypt </title>
+
+ 
+</head>
+<body>
+  <header>
+
+    <section class=".header">
+     <h1><span style="color: black;text-shadow: 2px 2px 5px white;">Explore</span>
+     <span style="color: red;">E</span>gyp<span style="color: black;">t</span> </h1>
+    <button id="btn">☰</button>
+     </section>
+     <nav id="nav">
+        <ul>
+           <li  id="exit" >✖</li>
+           <a href=""><li>Home</li></a>
+           <a href="explore.html"><li>Start Exploring</li></a>
+           <a href="cities.html"><li>Cities</li></a>
+           <a href="whoegypt.html"> <li>About Egypt</li></a>
+        </ul>
+     </nav>
+
+
+     <div id="div1"> مرحبا بك <br>في مصر </div>
+
+
+
+  </header>
+
+
+
+    
+
+
+    <main>
+
+<h2>Discover <br> Egypt</h2>
+
+<p>Egypt: where the sun kisses the pyramids. <br>Egypt: Land of history</p>
+
+<a href="explore.html"><button>Explore More</button></a>
+    </main>
+
+   
+    <script>
+let btn = document.getElementById('btn');
+let nav = document.getElementById('nav');
+let exit = document.getElementById('exit')
+
+btn.addEventListener('click',function(){
+    nav.style.display='block' ;
+
+    exit.style.display='block'
+
+})
+
+exit.addEventListener('click',function(){
+    nav.style.display='none'
+})
+
+
+    </script>
+</body>
+</html>
